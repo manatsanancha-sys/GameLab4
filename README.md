@@ -1,107 +1,118 @@
-# Game Lab 4: ผจญภัยป่าเวทมนตร์ (Mystic Forest Escape)
+# 🍄 ผจญภัยป่าเวทมนตร์ (Mystic Forest Escape)
+### สมุดบันทึกนักผจญภัย — Game Lab 4
 
-**รหัสนักศึกษา:** 673380637-7
-**ชื่อ-สกุล:** มนัสนันท์ จันดาเวียง
+*ไดอารีเล่มนี้เป็นของ...*
 
-**Game Story** — นักผจญภัยหลงเข้าไปในป่าลึกลับที่ถูกสาป ต้องหลบกับดักใบมีดและหอกแกว่ง
-เก็บไอเทมเวทมนตร์ (ไม้กายสิทธิ์เร่งความเร็ว, แสงเวทเพิ่มพลังกระโดด, ยาแดงฟื้นพลังชีวิต)
-เพื่อเอาชนะเห็ดพิษและสไลม์ แล้วเดินทางผ่าน 4 ด่าน ไปให้ถึงประตูมิติเพื่อกลับบ้าน
+| | |
+|---|---|
+| 🖋️ ผู้จดบันทึก | มนัสนันท์ จันดาเวียง |
+| 🔖 รหัสประจำตัว | 673380637-7 |
+| 📜 วิชา | Computer Game Development, College of Computing, Khon Kaen University |
+| 🧱 ต่อยอดจาก | [2D Platformer Starter Kit](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit) โดย AdilDevStuff |
 
-**Game Style** — พิกเซลอาร์ตแนวแฟนตาซี โทนสีป่าไม้เขียว-ม่วง
+<div align="center">
 
-โครงการนี้ต่อยอดจาก 2D Platformer Starter Kit ของวิชา **Computer Game Development**
-**College of Computing, Khon Kaen University**
+### 🗝️ [เข้าสู่ป่าต้องคำสาป — เล่นเลย](https://manatsanancha-sys.github.io/GameLab4/) &nbsp;|&nbsp; 🎞️ [ดูบันทึกการเดินทาง (Demo)](https://drive.google.com/drive/folders/12XrgxQdmw0Q6GZZ9ahRpEPAYJjzY_HVz?usp=sharing)
 
-## Preview
+</div>
 
-<img src="docs/demo1.jpg" width="300">
-<img src="docs/demo2.jpg" width="300">
+---
 
-- [Game Preview](https://manatsanancha-sys.github.io/GameLab4/)
-- [Demo VDO](https://drive.google.com/drive/folders/12XrgxQdmw0Q6GZZ9ahRpEPAYJjzY_HVz?usp=sharing)
+## Game Story
 
-## Features
+*"...ฉันเดินหลงเข้าไปในป่าลึกที่แผนที่ไม่เคยระบุไว้ ต้นไม้ที่นี่ผิดปกติ กิ่งก้านบิดเบี้ยวราวกับมีคำสาปคอยกัดกร่อน มีหอกไม้แกว่งไปมาราวกับมีชีวิต ใบมีดวางเรียงรายเป็นกับดัก และก้อนเห็ดสีแดงบางก้อน... ก็ลุกเดินได้เอง*
 
-- **Game Menu** — เมนูหลักพร้อมปุ่ม Start, Continue, Option, Credit และ Exit
-- **Mobile & Web Design** — เล่นได้ทั้งบนคอมและมือถือผ่านปุ่มสัมผัสบนจอ
-- **Platformer Controller** — เดิน กระโดด รองรับ Double Jump ปรับค่าได้จาก Inspector
-- **Weapon System** — ยิงกระสุนแบบมีฟิสิกส์กระเด้ง กำจัดศัตรูและเพิ่มคะแนน
-- **Enemy AI** — ศัตรู 3 ชนิด (เห็ด, สไลม์, เห็ดเร็ว) เดินลาดตระเวน หันกลับเมื่อเจอกำแพง ไล่ตามผู้เล่น
-- **Traps** — กับดักใบเลื่อยหมุน, หอกแกว่ง, ใบมีดแถว, ลาวา
-- **Level Objects** — กระดานเด้ง, แผ่นเลื่อน/ลิฟต์, ประตูวาร์ป
-- **Items** — เหรียญ/เพชรเก็บคะแนน, ยาแดงฟื้นพลังชีวิต, ไม้กายสิทธิ์เร่งความเร็ว, แสงเวทเพิ่มพลังกระโดด
-- **Custom Character** — ตัวละครผู้เล่นออกแบบเอง แบบ Skeleton2D พร้อมแอนิเมชัน Idle/Walk/Jump/Attack
-- **Particle Effects** — เอฟเฟกต์วิ่ง, ตาย, โดนตี
-- **Damage & Health System** — มีพลังชีวิต (HP) และจำนวนชีวิต (Life) แสดงผลบน UI
-- **Save & Load** — บันทึก/โหลดตำแหน่ง คะแนน และชีวิตด้วยไฟล์ JSON
-- **Sound & Music Toggle** — เปิด/ปิดเสียงเพลงและเอฟเฟกต์ได้
-- **Score System** — เก็บเหรียญหรือกำจัดศัตรูเพื่อเพิ่มคะแนน
-- **4 ด่าน** — level_01 ถึง level_04 ความยากเพิ่มขึ้นตามลำดับ พร้อมพื้นหลัง Parallax
-- **GameOver / WinGame** — ฉากจบพร้อมภาพประกอบและเสียง
-- **Level Management** — เปลี่ยนฉากลื่นไหลผ่าน Scene Transition Manager
+*ฉันไม่มีทางเลือกอื่นนอกจากเดินหน้าต่อไป เก็บแสงเวทที่ลอยอยู่ระหว่างทาง ต่อสู้กับสิ่งมีชีวิตประหลาด และตามหาประตูมิติที่จะพาฉันกลับบ้าน..."*
 
-## Getting Started
+**โทนภาพ:** พิกเซลอาร์ตแฟนตาซี ผสมโทนสีเขียวป่าลึกและม่วงเวทมนตร์
 
-1. เปิดโปรเจกต์ด้วย [Godot 4.7](https://godotengine.org/) ขึ้นไป
-2. กด **F5** หรือปุ่ม Play เพื่อรันเมนูหลัก
-3. ใช้ **A/D** หรือปุ่มลูกศร ซ้าย-ขวา เดิน, **Space** กระโดด, **X** ยิง
-4. บนมือถือ/เว็บ ใช้ปุ่มสัมผัสด้านล่างจอ
-5. เก็บเหรียญ กำจัดศัตรู หลบกับดัก แล้วไปถึงประตูเพื่อผ่านด่าน
+---
 
-## Project Structure
+## 🖼️ ตัวอย่างภายในเกม (Game Screenshots)
+
+| 📋 หน้าเมนูหลัก (Main Menu) | 🕹️ บรรยากาศขณะเล่นเกม (In-Game) |
+|:---:|:---:|
+| <img src="docs/demo1.jpg" width="320"> | <img src="docs/demo2.jpg" width="320"> |
+
+---
+
+## เครื่องมือของนักผจญภัย
+
+**การเคลื่อนไหว**
+
+| ปุ่ม | ท่วงท่า |
+|:---:|---|
+| `A` `←` | ก้าวไปทางซ้าย |
+| `D` `→` | ก้าวไปทางขวา |
+| `Space` | กระโจนข้ามหุบเหว |
+| `X` | ร่ายคาถาลูกไฟใส่ศัตรู |
+| ปุ่มสัมผัสหน้าจอ | สำหรับผู้เดินทางบนมือถือ/เว็บ |
+
+**เสบียงระหว่างทาง**
+
+| ไอเทม | สรรพคุณ |
+|---|---|
+| 💎 เพชร/เหรียญ | สะสมคะแนนชื่อเสียง |
+| ❤️ ยาแดง | ฟื้นฟูพลังชีวิต |
+| 🌀 ไม้กายสิทธิ์ | เร่งความเร็วการเดินชั่วคราว |
+| ✴️ แสงเวท | เพิ่มพลังกระโดดชั่วคราว |
+
+**ผู้ร้ายในป่า**
+
+เห็ดพิษ 🍄 · สไลม์ 🟢 · เห็ดเร็ว 🏃🍄 — เดินลาดตระเวน หันหลังเมื่อชนกำแพง ไล่ล่าเมื่อเจอผู้บุกรุก
+
+**กับดักและกลไกในป่า**
+
+เกียร์หมุน · หอกแกว่ง · แถวใบมีด · สระลาวา · กระดานเด้ง · แผ่นเลื่อน/ลิฟต์ · ประตูวาร์ป
+
+---
+
+## ระบบเบื้องหลัง (สำหรับผู้ที่อยากศึกษาต่อ)
 
 ```
 Scenes/
-├── Actors/           # Player, enemies, and spawners
-├── Levels/           # Level scenes, base level template, and UI
-├── Managers/         # GameManager, SceneTransition, AudioManager
-└── Prefabs/          # Reusable objects (bullet, coin, potion, traps, items, door, button)
+├── Actors/     ตัวละครผู้เล่นและศัตรู
+├── Levels/     ฉากแต่ละด่าน เมนู และหน้าจอ UI
+├── Managers/   ตัวจัดการคะแนน เสียง และการเปลี่ยนฉาก
+└── Prefabs/    ของที่ใช้ซ้ำ — กระสุน เหรียญ ไอเทม กับดัก
 
 Assets/
-├── Fonts/            # Custom fonts
-├── Icons/            # UI icons
-├── Sound/            # BGM and SFX
-├── Spritesheet/      # Character and tile sprites
-└── Textures/         # Particle and effect textures
+├── Fonts/         ฟอนต์ที่ใช้ในเกม
+├── Sound/          เพลงและเสียงเอฟเฟกต์
+├── Spritesheet/    ตัวละครและ Tile ต่างๆ
+└── Textures/       เอฟเฟกต์อนุภาค
 ```
 
-## Controls
+**คุณสมบัติที่มีให้ปรับแต่งใน Inspector**
+- **Player** — `double_jump`, `move_speed`, `jump_force`, `shoot_cooldown_time`, `bullet_lifetime`
+- **Enemy Spawner** — `enemy_scenes`, `speed_range`, `respawn_time`, `max_instance`
+- **Bullet** — `speed`, `lifetime`
 
-| Input | Action |
-|-------|--------|
-| A / Left Arrow | Move left |
-| D / Right Arrow | Move right |
-| Space / S | Jump |
-| X | Shoot |
-| On-screen buttons | Mobile and web touch controls |
+**การบันทึกการเดินทาง (Save & Load)**
+กดปุ่ม Save มุมขวาบนเพื่อบันทึกตำแหน่ง คะแนน ชีวิต และการตั้งค่าเสียง — กลับมาเล่นต่อได้ทุกเมื่อผ่านปุ่ม Continue
 
-## Inspector Tips
+---
 
-- **Player**: Toggle `double_jump` เปิด/ปิด Double Jump ปรับ `move_speed`, `jump_force`, `shoot_cooldown_time`, `bullet_lifetime` ได้
-- **Enemy Spawner**: ปรับ `enemy_scenes`, `speed_range`, `respawn_time`, `max_instance`
-- **Bullet**: ปรับ `speed` และ `lifetime`
+## สิ่งที่เพิ่มเข้ามาในการผจญภัยครั้งนี้
 
-## Saving
+ตัวละครผู้เล่นออกแบบเอง (Skeleton2D พร้อมท่า Idle/Walk/Jump/Attack) · มอนสเตอร์เพิ่มอีก 1 ชนิด · กับดักลาวาและแถวใบมีดใหม่ · กระดานเด้ง แผ่นเลื่อน ประตูวาร์ป · ไอเทมเร่งความเร็ว/เพิ่มพลังกระโดด · ออกแบบพื้นด่านใหม่ทั้ง 4 ด่านพร้อม Collision Polygon · พื้นหลังเมนู/ฉากจบใหม่ทั้งหมด
 
-- กดปุ่ม **Save** มุมขวาบนเพื่อบันทึกความคืบหน้า
-- เกมบันทึกตำแหน่งผู้เล่น คะแนน ชีวิต และการตั้งค่าเสียง
+---
 
-## Credits
+## ผู้ร่วมเดินทาง (Credits)
 
-**Modified By**
-- 673380637-7 มนัสนันท์ จันดาเวียง
+**ดัดแปลงและพัฒนาต่อโดย** — 673380637-7 มนัสนันท์ จันดาเวียง
 
-**Original Developer**
-- [AdilDevStuff](https://github.com/AdilDevStuff) — [2D-Platformer-Starter-Kit](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit)
+**ต้นฉบับพัฒนาโดย** — [AdilDevStuff](https://github.com/AdilDevStuff) · [2D-Platformer-Starter-Kit](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit)
 
-**2D Assets**
-- [Kenney.nl](https://www.kenney.nl/)
-- [craftpix.net](https://craftpix.net/)
-- [Ravenmore](https://ravenmore.itch.io/)
-- [Icons8.com](https://icons8.com)
+**ทรัพยากรภาพ** — [Kenney.nl](https://www.kenney.nl/) · [craftpix.net](https://craftpix.net/) · [Ravenmore](https://ravenmore.itch.io/) · [Icons8.com](https://icons8.com)
 
-**Sound Effects**
-- GDFXR (Sfxr plugin for Godot)
+**ทรัพยากรเสียง** — GDFXR (ปลั๊กอิน Sfxr สำหรับ Godot)
 
-**Modified for Educational Use By**
-- College of Computing, Khon Kaen University
+**ดัดแปลงเพื่อการศึกษาโดย** — College of Computing, Khon Kaen University
+
+<div align="center">
+
+*จบบทบันทึกไว้เพียงเท่านี้... ที่เหลือให้คุณไปเขียนต่อในป่าเอง*
+
+</div>
