@@ -24,6 +24,14 @@
 
 *ฉันไม่มีทางเลือกอื่นนอกจากเดินหน้าต่อไป เก็บแสงเวทที่ลอยอยู่ระหว่างทาง ต่อสู้กับสิ่งมีชีวิตประหลาด และตามหาประตูมิติที่จะพาฉันกลับบ้าน..."*
 
+---
+
+## 🖼️ ตัวอย่างภายในเกม (Game Screenshots)
+
+| 📋 หน้าเมนูหลัก (Main Menu) | 🕹️ บรรยากาศขณะเล่นเกม (In-Game) |
+|:---:|:---:|
+| <img src="docs/demo1.jpg" width="320"> | <img src="docs/demo2.jpg" width="320"> |
+
 <p align="center">
   <a href="https://manatsanancha-sys.github.io/GameLab4/">
     <img src="https://img.shields.io/badge/▶️_PLAY_NOW-4CAF50?style=for-the-badge" alt="Play Game">
@@ -33,14 +41,6 @@
     <img src="https://img.shields.io/badge/🎬_DEMO_VDO-9C27B0?style=for-the-badge" alt="Demo Video">
   </a>
 </p>
-
----
-
-## 🖼️ ตัวอย่างภายในเกม (Game Screenshots)
-
-| 📋 หน้าเมนูหลัก (Main Menu) | 🕹️ บรรยากาศขณะเล่นเกม (In-Game) |
-|:---:|:---:|
-| <img src="docs/demo1.jpg" width="320"> | <img src="docs/demo2.jpg" width="320"> |
 
 ---
 
