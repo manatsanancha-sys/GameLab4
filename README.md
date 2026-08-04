@@ -24,7 +24,15 @@
 
 *ฉันไม่มีทางเลือกอื่นนอกจากเดินหน้าต่อไป เก็บแสงเวทที่ลอยอยู่ระหว่างทาง ต่อสู้กับสิ่งมีชีวิตประหลาด และตามหาประตูมิติที่จะพาฉันกลับบ้าน..."*
 
-**โทนภาพ:** พิกเซลอาร์ตแฟนตาซี ผสมโทนสีเขียวป่าลึกและม่วงเวทมนตร์
+<p align="center">
+  <a href="https://manatsanancha-sys.github.io/GameLab4/">
+    <img src="https://img.shields.io/badge/▶️_PLAY_NOW-4CAF50?style=for-the-badge" alt="Play Game">
+  </a>
+  &nbsp;
+  <a href="https://drive.google.com/drive/folders/12XrgxQdmw0Q6GZZ9ahRpEPAYJjzY_HVz?usp=sharing">
+    <img src="https://img.shields.io/badge/🎬_DEMO_VDO-9C27B0?style=for-the-badge" alt="Demo Video">
+  </a>
+</p>
 
 ---
 
